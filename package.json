@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d",
-    "build": "webpack -p --config webpack.config.prod.js"
+    "build": "webpack -p --config webpack.config.prod.js",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
