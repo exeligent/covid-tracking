@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server -d",
     "build": "webpack -p --config webpack.config.prod.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "postinstall": "chmod -R +x node_modules/next/dist/bin/next-* && npm run build"
   },
   "author": "",
   "license": "ISC",
