@@ -9,6 +9,10 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "npm": "6.13.4",
+    "node": "8.10.0"
+  },
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
