@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css");
+$red: #b71c1c;
+$green: #4caf50;
+$outline-blue: #08c;
+
+$borderStyle: 1px solid #ddd;
+
+@import "styles/select_box";
+
+body {
+  margin-top: 70px;
+}
+
+.navbar {
+  border-radius: 0;
+  height: 60px;
+  background: rgba(239, 239, 255, 0.9);
+  padding: 0 30px;
+}
+
+.navbar-header {
+  display: inline-block;
+}
+
+.github-repo-link {
+  line-height: 50px;
+
+  .glyphicon {
+    margin-right: 5px;
+  }
+}
+
+.datamap-outer-conainer {
+  padding: 0;
+
+  #datamap-container {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.data-table-box {
+  padding: 0 15px;
+
+  .data-table-box-outer {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+table {
+  width: 100%;
+  margin-bottom: 150px;
+  border-collapse: collapse;
+
+  th {
+    border: $borderStyle;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    h4 {
+      display: inline-block;
+    }
+
+    .glyphicon {
+      margin-left: 20px;
+    }
+  }
+
+  td {
+    border: $borderStyle;
+    width: 45%;
+    height: 35px;
+    text-align: start;
+
+    &:first-of-type {
+      padding: 10px 15px;
+    }
+
+    &:last-of-type {
+      border: none;
+      width: 10%;
+    }
+  }
+
+  input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+  }
+
+  .remove-btn {
+    margin-left: 10px;
+    padding: 10px;
+    color: $red;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+
+  tr:hover .remove-btn {
+    opacity: 1;
+  }
+}
+
+/* app */
+.row-card-padding {
+  padding: 2.3rem;
+}
+
+.card {
+  background-color: #323a46;
+  padding: 1.5rem;
+  box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+  margin-bottom: 24px;
+  border-radius: 0.25rem;
+}
+.color-white {
+  color: #fff !important;
+}
+.region-container {
+  color: #fff;
+  font-family: "Barlow,sans-serif";
+}
+.card-2 {
+  background-color: #323a46;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+  margin-bottom: 24;
+  border-radius: 0.25rem;
+  padding-bottom: 70px;
+  color: #fff;
+}
+.p10 {
+  padding: 2px;
+}
+
+.right {
+  float: right;
+}
+.value {
+  color: #188ae2 !important;
+  font-weight: 700;
+}
+.detail-lable {
+  margin-right: 25px !important;
+  color: #ced4da !important;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.card-2-loading {
+  width: 100%;
+  background-color: #6c7d96;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+  margin-bottom: 24;
+  border-radius: 0.25rem;
+  padding-bottom: 75px;
+  color: #fff;
+}
+.animatedBG {
+  -webkit-animation-duration: 2.2s;
+  animation-duration: 2.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #e5f0fb;
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(110, 178, 247) 4%,
+    rgb(36, 137, 238) 25%,
+    rgb(22, 78, 134) 36%
+  );
+  background: linear-gradient(
+    to right,
+    rgb(110, 178, 247) 4%,
+    rgb(36, 137, 238) 25%,
+    rgb(22, 78, 134) 36%
+  );
+  -webkit-background-size: 1200px 100%;
+  background-size: 1200px 100%;
+}
+
+/* Animation of Shimmer Background */
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: 1200px 0;
+  }
+}
